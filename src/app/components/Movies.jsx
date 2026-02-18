@@ -37,3 +37,6 @@ const Movies = memo(({ movie }) => {
 
 Movies.displayName = 'Movies';
 export default Movies;
+
+
+
