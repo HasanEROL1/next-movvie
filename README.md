@@ -59,7 +59,7 @@ Projeyi yerel geliştirme ortamınızda ayağa kaldırmak için aşağıdaki ad�
    ```
 
 2. Proje dizinine gidin:
-   ```bash
+   ```
  cd next-movvie
    ```
 
