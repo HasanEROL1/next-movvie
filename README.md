@@ -3,7 +3,9 @@
 Modern, hızlı ve duyarlı (responsive) tasarıma sahip bir film keşif ve listeleme web uygulamasıdır. Kullanıcıların güncel sinema içeriklerine, popüler filmlere ve vizyondaki yapımlara tek bir noktadan ulaşmasını, arama filtreleri ile detaylı bilgilere erişmesini sağlar.
 
 ## 🎬 Demo
+
 ![Nextmovvie Demo](nextmovvie.gif)
+
 ## 🚀 Özellikler
 
 * **Kategori Tabanlı Listeleme:** Ana sayfa üzerinden dinamik olarak ayrıştırılmış 4 ana kategori:
@@ -14,7 +16,6 @@ Modern, hızlı ve duyarlı (responsive) tasarıma sahip bir film keşif ve list
 * **Gelişmiş Canlı Arama & Filtreleme:** Arama çubuğu üzerinden gerçek zamanlı ve harf duyarlı dinamik filtreleme yapısı.
 * **Dinamik Film Detay Sayfası:** Her film için özel arka plan görseli, detaylı konu özeti (sinopsis), vizyon yılı, IMDb puanı gösterimi ve fragman (Trailer) erişimi.
 * **Etkileşimli Film Kartları (Hover Effect):** Film afişlerinin üzerine gelindiğinde (hover) dinamik olarak tetiklenen, film adını, vizyon tarihini ve IMDb puanını akıcı bir animasyonla kart üzerinde gösteren modern kullanıcı deneyimi.
-
 * **Gelişmiş Tema Desteği:** `next-themes` entegrasyonu ile sağ üst menüden tek tıkla Açık/Karanlık (Light/Dark Mode) tema geçişi.
 * **Tam Duyarlı Tasarım (Responsive UI):** Mobil, tablet ve masaüstü cihazlar ile tam uyumlu modern arayüz tasarımı.
 
@@ -60,7 +61,7 @@ Projeyi yerel geliştirme ortamınızda ayağa kaldırmak için aşağıdaki ad�
 
 2. Proje dizinine gidin:
    ```bash
-  cd next-movvie
+   cd next-movvie
    ```
 
 3. Gerekli tüm bağımlılıkları yükleyin:
@@ -82,7 +83,3 @@ Projeyi yerel geliştirme ortamınızda ayağa kaldırmak için aşağıdaki ad�
 * `npm run dev`: Geliştirme modunda yerel sunucuyu başlatır.
 * `npm run build`: Üretim (production) ortamı için projeyi optimize ederek derler.
 * `npm run start`: Derlenmiş üretim sürümünü yayına alır.
-
-
-
-
