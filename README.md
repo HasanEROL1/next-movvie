@@ -1,38 +1,86 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# 🎬 MovieApp (movie-next)
 
-## Getting Started
+Modern, hızlı ve duyarlı (responsive) tasarıma sahip bir film keşif ve listeleme web uygulamasıdır. Kullanıcıların güncel sinema içeriklerine, popüler filmlere ve vizyondaki yapımlara tek bir noktadan ulaşmasını, arama filtreleri ile detaylı bilgilere erişmesini sağlar.
 
-First, run the development server:
+## 🎬 Demo
+![Nextmovvie Demo](nextmovvie.gif)
+## 🚀 Özellikler
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+* **Kategori Tabanlı Listeleme:** Ana sayfa üzerinden dinamik olarak ayrıştırılmış 4 ana kategori:
+  * 🔥 **En Popüler:** En çok ilgi gören trend filmler.
+  * ⭐ **En Sevilenler:** Kullanıcılar tarafından yüksek puan alan yapımlar.
+  * 📅 **Yakında Vizyona Girecekler:** Gelecek programda yer alan filmler.
+  * 🍿 **Şimdi Sinemalarda:** Güncel olarak sinema salonlarında gösterimde olanlar.
+* **Gelişmiş Canlı Arama & Filtreleme:** Arama çubuğu üzerinden gerçek zamanlı ve harf duyarlı dinamik filtreleme yapısı.
+* **Dinamik Film Detay Sayfası:** Her film için özel arka plan görseli, detaylı konu özeti (sinopsis), vizyon yılı, IMDb puanı gösterimi ve fragman (Trailer) erişimi.
+* **Etkileşimli Film Kartları (Hover Effect):** Film afişlerinin üzerine gelindiğinde (hover) dinamik olarak tetiklenen, film adını, vizyon tarihini ve IMDb puanını akıcı bir animasyonla kart üzerinde gösteren modern kullanıcı deneyimi.
+
+* **Gelişmiş Tema Desteği:** `next-themes` entegrasyonu ile sağ üst menüden tek tıkla Açık/Karanlık (Light/Dark Mode) tema geçişi.
+* **Tam Duyarlı Tasarım (Responsive UI):** Mobil, tablet ve masaüstü cihazlar ile tam uyumlu modern arayüz tasarımı.
+
+## 🛠️ Kullanılan Teknolojiler ve Bağımlılıklar
+
+### Çekirdek Yapı
+* **Framework:** [Next.js (v16.1)](https://nextjs.org) (App/Pages Router)
+* **Kütüphane:** [React (v19.2)](https://react.dev)
+* **Programlama Dili:** [TypeScript (v5.9)](https://typescriptlang.org)
+
+### Stil ve Görselleştirme
+* **Tasarım:** [Tailwind CSS (v3.4 / v4 PostCSS)](https://tailwindcss.com) & Autoprefixer
+* **Tema Yönetimi:** `next-themes` (v0.4)
+* **İkon Kütüphanesi:** `react-icons` (v5.5)
+
+### Derleyici Optimizasyonu
+* `babel-plugin-react-compiler` (React'in yeni nesil otomatik memoization derleyicisi)
+
+## 🔑 Çevre Değişkenleri (Environment Variables)
+
+Projenin TMDB (The Movie Database) API üzerinden film verilerini çekebilmesi için kök dizinde bir `.env.local` dosyası oluşturmalı ve aşağıdaki anahtarları tanımlamalısınız:
+
+```env
+NEXT_PUBLIC_TMDB_API_KEY=your_tmdb_api_key_here
+NEXT_PUBLIC_TMDB_KEY=your_tmdb_read_access_token_here
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+> ⚠️ **Not:** `NEXT_PUBLIC_` ön eki, bu değişkenlerin Next.js tarafında istemci (client-side) kodlarında da güvenli bir şekilde kullanılabilmesini sağlar.
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+## 📦 Kurulum ve Çalıştırma
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Projeyi yerel geliştirme ortamınızda ayağa kaldırmak için aşağıdaki adımları takip edin:
 
-## Learn More
+### Gereksinimler
+* Bilgisayarınızda **Node.js** (LTS sürümü önerilir) kurulu olmalıdır.
 
-To learn more about Next.js, take a look at the following resources:
+### Adımlar
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+1. Bu depoyu bilgisayarınıza kopyalayın:
+   ```bash
+   git clone https://github.com/HasanEROL1/next-movvie
+   ```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+2. Proje dizinine gidin:
+   ```bash
+   cd movie-next
+   ```
 
-## Deploy on Vercel
+3. Gerekli tüm bağımlılıkları yükleyin:
+   ```bash
+   npm install
+   ```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+4. Yukarıda belirtilen `.env.local` dosyasını oluşturun ve API anahtarlarınızı girin.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
-# next-movvie
-# next-movvie
+5. Yerel geliştirme sunucusunu başlatın:
+   ```bash
+   npm run dev
+   ```
+
+6. Tarayıcınızdan `http://localhost:3000` adresine giderek uygulamayı görüntüleyin.
+
+## ⚙️ Mevcut Komutlar (Scripts)
+
+* `npm run dev`: Geliştirme modunda yerel sunucuyu başlatır.
+* `npm run build`: Üretim (production) ortamı için projeyi optimize ederek derler.
+* `npm run start`: Derlenmiş üretim sürümünü yayına alır.
+
+

@@ -8,17 +8,17 @@ export const metadata = {
   description: 'Movie application'
 }
 
-export default function Layout({children}) {
+export default function Layout({ children }) {
   return (
-    <html lang="en">
+    <html lang="en" suppressHydrationWarning>
       <body>
         <Providers>
           <Header />
           <Tabs />
-         
+
           {children}
         </Providers>
-      
+
       </body>
     </html>
   )
